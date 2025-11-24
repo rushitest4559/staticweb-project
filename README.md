@@ -1,4 +1,4 @@
-# Cloud Infrastructure & Frontend Application
+# Production-Grade AWS Infra with Terraform + GitHub Actions CI/CD – EC2 Multi-Region Dashboard
 
 ## Overview
 
