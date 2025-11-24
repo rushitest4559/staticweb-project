@@ -1,7 +1,6 @@
 import boto3
 from datetime import datetime, timezone, timedelta
 
-# Indian Standard Time = UTC + 5:30
 IST_OFFSET = timedelta(hours=5, minutes=30)
 
 def lambda_handler(event, context):
@@ -49,6 +48,3 @@ def lambda_handler(event, context):
         'Summary': summary,
         'Instances': all_instances
     }
-
-# Deploy tip: Give this Lambda an IAM role with ec2:DescribeRegions and ec2:DescribeInstances (or just AmazonEC2ReadOnlyAccess)
-# It'll happily scan your entire empire like a bored sysadmin on coffee.
